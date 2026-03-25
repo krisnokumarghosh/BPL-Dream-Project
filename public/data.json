@@ -1,0 +1,102 @@
+[
+    {
+        "playerName": "Najmul Hossain Shanto",
+        "playerCountry": "Bangladesh",
+        "playerType": "Batsman",
+        "rating": 85,
+        "battingStyle": "Left-hand bat",
+        "bowlingStyle": "Right-arm off-break",
+        "price": 9500,
+        "image": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/63872.png"
+    },
+    {
+      "playerName": "Kagiso Rabada",
+      "playerCountry": "South Africa",
+      "playerType": "Bowler",
+      "rating": 90,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm fast",
+      "price": 1750,
+      "image": "https://www.hindustantimes.com/static-content/1y/cricket-logos/players/kagiso-rabada.png"
+    },
+  {
+    "playerName": "Litton Das",
+    "playerCountry": "Bangladesh",
+    "playerType": "Wicket-keeper Batsman",
+    "rating": 83,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "N/A",
+    "price": 9000,
+    "image": "https://static-files.cricket-australia.pulselive.com/headshots/440/545-camedia.png"
+  },
+  {
+    "playerName": "Mushfiqur Rahim",
+    "playerCountry": "Bangladesh",
+    "playerType": "Wicket-keeper Batsman",
+    "rating": 88,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "N/A",
+    "price": 1100,
+    "image": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/3693.png"
+  },
+  {
+    "playerName": "Mehidy Hasan Miraz",
+    "playerCountry": "Bangladesh",
+    "playerType": "All-rounder",
+    "rating": 84,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm off-break",
+    "price": 8750,
+    "image": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/63875.png"
+  },
+  {
+    "playerName": "Mustafizur Rahman",
+    "playerCountry": "Bangladesh",
+    "playerType": "Bowler",
+    "rating": 87,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Left-arm fast-medium",
+    "price": 10500,
+    "image": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/63881.png"
+  },
+  {
+    "playerName": "Jofra Archer",
+    "playerCountry": "England",
+    "playerType": "Bowler",
+    "rating": 86,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "price": 15000,
+    "image": "https://www.hindustantimes.com/static-content/1y/cricket-logos/players/jofra-archer.png"
+  },
+  {
+    "playerName": "Quinton de Kock",
+    "playerCountry": "South Africa",
+    "playerType": "Wicket-keeper Batsman",
+    "rating": 87,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "N/A",
+    "price": 1600,
+    "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202310/quinton-de-kock-014342678-3x4.jpg?VersionId=sNMzIlDUVr8QzxyXvwYSwQRT3EItGWAR"
+  },
+  {
+    "playerName": "Kane Williamson",
+    "playerCountry": "New Zealand",
+    "playerType": "Batsman",
+    "rating": 92,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm off-break",
+    "price": 1950,
+    "image": "https://documents.iplt20.com/ipl/IPLHeadshot2024/65.png"
+  },
+  {
+    "playerName": "Trent Boult",
+    "playerCountry": "New Zealand",
+    "playerType": "Bowler",
+    "rating": 87,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Left-arm fast-medium",
+    "price": 1550,
+    "image": "https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/330500/330545.jpg"
+  }
+]
