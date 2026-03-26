@@ -9,7 +9,7 @@ const Players = ({playersPromise , coin , setCoin}) => {
     const [selectedPlayers , setSelectedPlayers] = useState([]);
     
     return (
-        <div className='mt-16 container mx-auto mb-40'>
+        <div className='mt-16 container mx-auto mb-60'>
         <div className='md:flex justify-between items-center mb-8'>
             {
                 selectedType === "available" ? 
