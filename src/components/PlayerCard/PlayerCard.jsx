@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaFlag, FaRegUser } from "react-icons/fa";
 
-const PlayerCard = ({ SinglePlayer }) => {
+const PlayerCard = ({ SinglePlayer , selectedPlayers , setSelectedPlayers }) => {
+
+  const [isSelected , setIsSelected] = useState(false);
+
+  const handleChoosePlayer = () => {
+    setIsSelected(true)
+
+    setSelectedPlayers([...selectedPlayers , SinglePlayer])
+  }
+
   return (
     <div className="card bg-base-100 sm:w-80 md:w-96 shadow-sm">
       <figure className="bg-gray-600">
@@ -23,7 +32,14 @@ const PlayerCard = ({ SinglePlayer }) => {
              </div>
         <div className="card-actions justify-between items-center mt-2">
           <h3 className="font-semibold text-[16px]">Price: {SinglePlayer.price}</h3>
-          <button className="btn btn-neutral">Choose Player</button>
+
+          <button 
+          disabled={isSelected}
+          onClick={handleChoosePlayer}
+          className="btn btn-neutral">{
+            isSelected ? "Selected" : "Choose Player"
+          }</button>
+
         </div>
       </div>
     </div>
