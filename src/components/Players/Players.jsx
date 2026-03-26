@@ -2,14 +2,14 @@ import React, { use, useState } from 'react';
 import AvailablePlayers from '../AvailablePlayers/AvailablePlayers';
 import SelectedPlayer from '../SelectedPlayer/SelectedPlayer';
 
-const Players = ({playersPromise}) => {
+const Players = ({playersPromise , coin , setCoin}) => {
     const data = use(playersPromise);
 
     const [selectedType , setSelectedType] = useState("available");
     const [selectedPlayers , setSelectedPlayers] = useState([]);
     
     return (
-        <div className='mt-16 container mx-auto'>
+        <div className='mt-16 container mx-auto mb-40'>
         <div className='md:flex justify-between items-center mb-8'>
             {
                 selectedType === "available" ? 
@@ -34,11 +34,15 @@ const Players = ({playersPromise}) => {
         {
             selectedType === "available" ? 
             <AvailablePlayers 
+            coin={coin}
+            setCoin={setCoin}
             selectedPlayers={selectedPlayers}
             setSelectedPlayers={setSelectedPlayers}
             data={data}></AvailablePlayers> :
             
             <SelectedPlayer
+             coin={coin}
+             setCoin={setCoin}
             selectedPlayers={selectedPlayers}
             setSelectedPlayers={setSelectedPlayers}
             ></SelectedPlayer>

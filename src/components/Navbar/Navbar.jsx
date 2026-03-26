@@ -2,7 +2,7 @@ import React from 'react';
 import navLogo from "../../assets/logo.png";
 import coinImg from "../../assets/Currency.png"
 
-const Navbar = () => {
+const Navbar = ({coin}) => {
     return (
         <div className=' navbar bg-base-100 shadow-sm'>
            <div className='container mx-auto flex justify-between items-center'>
@@ -20,7 +20,7 @@ const Navbar = () => {
                 </ul>
                 </div> 
                 <div className='flex items-center gap-1 btn'>
-                    <button>0 Coin </button>
+                    <button>{coin} Coin </button>
                     <img src={coinImg} alt="" />
                 </div>
             </div>

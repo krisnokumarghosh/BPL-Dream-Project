@@ -1,9 +1,17 @@
 import React from 'react';
 import { FaTrashAlt } from 'react-icons/fa';
 
-const SelectedPlayer = ({selectedPlayers , setSelectedPlayers}) => {
+const SelectedPlayer = ({selectedPlayers , setSelectedPlayers , coin , setCoin}) => {
+
+    const handleDeleteSelectedPlayer = (player) => {
+        const filteredPlayers = selectedPlayers.filter(selected => selected.playerName != player.playerName);
+
+        setSelectedPlayers(filteredPlayers);
+        setCoin(coin + player.price);
+    }
+
     return (
-        <div className='mb-20'>
+        <div className='mb-20 space-y-6'>
            {
             selectedPlayers.length == 0 ? 
             <div 
@@ -30,7 +38,9 @@ const SelectedPlayer = ({selectedPlayers , setSelectedPlayers}) => {
                         </div>
                     </div>
                     <div>
-                        <button className='btn'><FaTrashAlt></FaTrashAlt></button>
+                        <button 
+                        onClick={() => handleDeleteSelectedPlayer(player)}
+                        className='btn'><FaTrashAlt></FaTrashAlt></button>
                     </div>
 
                 </div>
