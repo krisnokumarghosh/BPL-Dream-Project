@@ -1,9 +1,9 @@
 import React from "react";
-import { FaRegUser } from "react-icons/fa";
+import { FaFlag, FaRegUser } from "react-icons/fa";
 
 const PlayerCard = ({ SinglePlayer }) => {
   return (
-    <div className="card bg-base-100 w-96 shadow-sm">
+    <div className="card bg-base-100 sm:w-80 md:w-96 shadow-sm">
       <figure className="bg-gray-600">
         <img className="max-h-75" src={SinglePlayer.image} alt="" />
       </figure>
@@ -11,8 +11,19 @@ const PlayerCard = ({ SinglePlayer }) => {
         <h2 className="card-title">
             <FaRegUser></FaRegUser>
             {SinglePlayer.playerName}</h2>
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
+            <div className="flex items-center justify-between">
+              <h3 className="flex items-center gap-2 text-[#131313]/70"> <FaFlag></FaFlag> {SinglePlayer.playerCountry}</h3>
+              <button className="btn">{SinglePlayer.playerType}</button>
+            </div>
+             <div className="divider"></div>
+             <h3 className="font-bold text-[16px]">Rating</h3>
+             <div className="flex items-center justify-between mt-2">
+              <h3 className="font-semibold text-[16px]">{SinglePlayer.battingStyle}</h3>
+              <h3 className="font-semibold text-[16px] text-[#131313]/70">{SinglePlayer.bowlingStyle}</h3>
+             </div>
+        <div className="card-actions justify-between items-center mt-2">
+          <h3 className="font-semibold text-[16px]">Price: {SinglePlayer.price}</h3>
+          <button className="btn btn-neutral">Choose Player</button>
         </div>
       </div>
     </div>
@@ -20,3 +31,4 @@ const PlayerCard = ({ SinglePlayer }) => {
 };
 
 export default PlayerCard;
+ 
