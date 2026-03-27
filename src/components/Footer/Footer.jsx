@@ -1,6 +1,5 @@
 import React from "react";
 import logoFooter from "../../assets/logo-footer.png";
-import bgShadow from "../../assets/bg-shadow.png"
 
 const Footer = () => {
   return (
