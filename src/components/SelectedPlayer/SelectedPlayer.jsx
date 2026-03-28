@@ -15,7 +15,7 @@ const SelectedPlayer = ({selectedPlayers , setSelectedPlayers , coin , setCoin})
            {
             selectedPlayers.length == 0 ? 
             <div 
-            className='text-center border border-gray-300 rounded-xl py-20'
+            className='text-center rounded-xl py-20  border-2 border-gray-300  shadow'
             >
                 <h2 className='font-bold text-[20px]'>No Player Selected Yet</h2>
                 <p className='text-gray-500 mt-1'>Go to available tab to select player</p>

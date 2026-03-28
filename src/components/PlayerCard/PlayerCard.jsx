@@ -25,7 +25,15 @@ const PlayerCard = ({ SinglePlayer , selectedPlayers , setSelectedPlayers , coin
 
   return (
     <div className="card bg-base-100 sm:w-80 md:w-96 shadow-sm">
-      <figure className="bg-gray-600">
+      <figure 
+      style={{
+    background: '#0e0e1a',
+    backgroundImage: `
+      radial-gradient(circle at 0% 50%, rgba(120,60,200,0.55), transparent 60%),
+      radial-gradient(circle at 100% 50%, rgba(180,60,120,0.45), transparent 60%)
+    `
+  }}
+      >
         <img className="max-h-75" src={SinglePlayer.image} alt="" />
       </figure>
       <div className="card-body">
